@@ -10,6 +10,16 @@ public class Persona {
 	LocalDate fechaNacimiento;
 	int estatura;
 	
+	public Persona(String nombre, String apellidos, LocalDate fechaNacimiento ) {
+		 this.nombre=nombre;
+		 this.apellidos=apellidos;
+		 this.fechaNacimiento=fechaNacimiento;
+	 }
+	
+	public Persona() {
+		
+	 }
+	 
 	public void mostrarDatos() {
 		System.out.printf("Los datos de %s son:\n Apellidos:%s\n Estatura:%d cm\n Fecha de nacimiento:%s\n",nombre,apellidos,estatura,fechaNacimiento);
 	}

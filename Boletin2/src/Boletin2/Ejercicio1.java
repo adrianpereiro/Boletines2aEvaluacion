@@ -28,6 +28,10 @@ public class Ejercicio1 {
 		p4.estatura=127;
 		p4.fechaNacimiento= LocalDate.of(2010, 5, 1);
 		
+		Persona p5=new Persona("Lorena", "Remeseiro Neira", LocalDate.of(2000, 6, 12) );
+		
+		Persona p6=new Persona("Patricia", "Seoane Álvarez", LocalDate.of(1976,8,23));
+		
 		p1.mostrarDatos();
 		p2.mostrarDatos();
 		p3.mostrarDatos();
