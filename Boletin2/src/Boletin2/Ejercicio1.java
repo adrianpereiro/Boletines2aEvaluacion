@@ -36,10 +36,14 @@ public class Ejercicio1 {
 		p2.mostrarDatos();
 		p3.mostrarDatos();
 		p4.mostrarDatos();
+		p5.mostrarDatos();
+		p6.mostrarDatos();
 		p1.obtenerEdad();
 		p2.obtenerEdad();
 		p3.obtenerEdad();
 		p4.obtenerEdad();
+		p5.obtenerEdad();
+		p6.obtenerEdad();
 	}
 	
 }
