@@ -32,7 +32,7 @@ public class Vehiculo {
 		this.conductor = conductor;
 	}
 	public void mostrarDatos() {
-		System.out.printf("%s,%s,%d,%s",matricula,tipo,velocidadMaxima,conductor);
+		System.out.printf("Matricula:%s\nTipo:%s\nVelocidad máxima:%d Km/h\n\n",matricula,tipo,velocidadMaxima);
 	}
 	
 	

@@ -1,12 +1,9 @@
 package Boletin3;
 
-public class Camion {
+public class Camion extends Vehiculo {
 	private int altura;
 	private Remolque remolque;
-	public String matricula;
-	public String tipo;
-	public int velocidadMaxima;
-	public Conductor conductor;
+
 	
 	public int getAltura() {
 		return altura;
@@ -24,11 +21,17 @@ public class Camion {
 		this.remolque = remolque;
 	}
 
-	public Camion(Remolque remolque, String matricula, String tipo, int velocidadMaxima, Conductor conductor) {
+	public Camion(int altura,Remolque remolque, String matricula, String tipo, int velocidadMaxima, Conductor conductor) {
+		this.altura=altura;
 		this.remolque=remolque;
-		this.matricula=matricula;
-		this.tipo=tipo;
-		this.velocidadMaxima=velocidadMaxima;
-		this.conductor=conductor;
+		this.setMatricula(matricula);
+		this.setTipo(tipo);
+		this.setVelocidadMaxima(velocidadMaxima);
+		this.setConductor(conductor);
+	}
+	
+	public void  mostrarDatos() {
+		System.out.printf("Altura:%s cm\n",altura);
+		super.mostrarDatos();
 	}
 }

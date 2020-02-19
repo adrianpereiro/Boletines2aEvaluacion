@@ -10,10 +10,11 @@ public class Persona {
 	LocalDate fechaNacimiento;
 	int estatura;
 	
-	public Persona(String nombre, String apellidos, LocalDate fechaNacimiento ) {
+	public Persona(String nombre, String apellidos, LocalDate fechaNacimiento, int estatura ) {
 		 this.nombre=nombre;
 		 this.apellidos=apellidos;
 		 this.fechaNacimiento=fechaNacimiento;
+		 this.estatura=estatura;
 	 }
 	
 	public Persona() {
@@ -21,12 +22,12 @@ public class Persona {
 	 }
 	 
 	public void mostrarDatos() {
-		System.out.printf("Los datos de %s son:\n Apellidos:%s\n Estatura:%d cm\n Fecha de nacimiento:%s\n",nombre,apellidos,estatura,fechaNacimiento);
+		System.out.printf("Los datos de %s son:\n Apellidos:%s\n Estatura:%d cm\n Fecha de nacimiento:%s\n\n",nombre,apellidos,estatura,fechaNacimiento);
 	}
 	
 	public void obtenerEdad() {
 		LocalDate hoy= LocalDate.now();
 		long edad = ChronoUnit.YEARS.between(fechaNacimiento,hoy );
-		System.out.printf("La edad de %s es %s años\n",nombre,edad);
+		System.out.printf("La edad de %s es %s años\n\n",nombre,edad);
 	}
 }
