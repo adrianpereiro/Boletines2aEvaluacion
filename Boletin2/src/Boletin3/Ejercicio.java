@@ -11,6 +11,5 @@ public class Ejercicio {
 		coche1.mostrarDatos();
 		
 		
-		
 	}
 }

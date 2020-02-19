@@ -30,4 +30,3 @@ public class Persona {
 		System.out.printf("La edad de %s es %s años\n",nombre,edad);
 	}
 }
-
