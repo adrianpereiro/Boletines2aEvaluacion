@@ -26,6 +26,6 @@ public class Conductor {
 	}
 	
 	public String toString(){
-		return 
+		return "Los datos de "+this.nombre+" son:\nDni:"+ this.dni ;
 	}
 }

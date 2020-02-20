@@ -30,4 +30,9 @@ public class Persona {
 		long edad = ChronoUnit.YEARS.between(fechaNacimiento,hoy );
 		System.out.printf("La edad de %s es %s años\n\n",nombre,edad);
 	}
+	public long devolverEdad() {
+		LocalDate hoy= LocalDate.now();
+		long edad = ChronoUnit.YEARS.between(fechaNacimiento,hoy );
+		return edad;
+	}
 }

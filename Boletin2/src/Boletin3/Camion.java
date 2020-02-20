@@ -31,7 +31,8 @@ public class Camion extends Vehiculo {
 	}
 	
 	public void  mostrarDatos() {
-		System.out.printf("Altura:%s cm\n",altura);
+		System.out.printf("Datos Vehiculo\nAltura:%s cm\n",altura);
 		super.mostrarDatos();
 	}
+	
 }

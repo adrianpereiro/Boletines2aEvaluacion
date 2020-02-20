@@ -8,4 +8,7 @@ public class Remolque {
 		this.matricula=matricula;
 		this.longitud=longitud;
 	}
+	public String toString(){
+		return "Matricula remolque: "+this.matricula+"\nLongitud remolque: "+ this.longitud+" cm";
+	}
 }
