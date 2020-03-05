@@ -30,6 +30,13 @@ public class Camion extends Vehiculo {
 		this.setConductor(conductor);
 	}
 	
+	public Camion(String matricula, String tipo, int velocidadMaxima, int altura) {
+		this.setMatricula(matricula);
+		this.setVelocidadMaxima(velocidadMaxima);
+		this.setTipo(tipo);
+		this.altura=altura;
+	}
+	
 	public void  mostrarDatos() {
 		System.out.printf("Datos Vehiculo\nAltura:%s cm\n",altura);
 		super.mostrarDatos();
