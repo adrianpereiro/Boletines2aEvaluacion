@@ -1,9 +1,6 @@
 package Boletin3_2;
 
-import java.io.ObjectInputStream.GetField;
-
 public class main {
-
 	public static void main(String[] args) {
 		Circulo circulo1=new Circulo(2.3,3.1416);
 		Cuadrado cuadrado1=new Cuadrado(5.2);
@@ -22,5 +19,17 @@ public class main {
 		
 	}
 
+	Figura[] arrayFiguras= {
+			new Triangulo(3,2),
+			new Cuadrado(5),
+			new Triangulo(15,3),
+			new Triangulo(8,7),
+			new Rectangulo(9,5),
+			new Rectangulo(15,6),
+			new Circulo(5),
+			new Circulo(9),
+			new Rectangulo(8,3),
+			new Cuadrado(9)
+			};
 
 }

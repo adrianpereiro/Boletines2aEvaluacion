@@ -8,6 +8,9 @@ public class Circulo extends Figura {
 		this.pi=pi;
 		this.radio=radio;
 	}
+	public Circulo(double radio) {
+		this.radio=radio;
+	}
 	
 	public double getRadio(){
 		return radio;

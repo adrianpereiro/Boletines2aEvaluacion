@@ -22,8 +22,8 @@ public class Ejercicio {
 		
 		System.out.println(conductorCamion1.toString());
 		System.out.println(remolque1.toString());
-		camion1.mostrarDatos();
 		
+		camion1.mostrarDatos();
 		camion2.mostrarDatos();
 		
 		impresionPolimorfismo(coche1);
