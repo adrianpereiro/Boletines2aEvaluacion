@@ -29,9 +29,16 @@ public class Circulo extends Figura {
 	}
 	
 	@Override
-	protected void calcularArea() {
+	public void calcularArea() {
 		this.setArea(pi*radio*radio);
 	}
-	
+	@Override
+	public void calcularPerimetro() {
+		this.setPerimetro(2*pi*radio);
+	}
+	public void imprimirDatosFigura() {
+		
+	}
+
 	
 }

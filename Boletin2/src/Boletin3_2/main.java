@@ -12,10 +12,23 @@ public class main {
 		triangulo1.calcularArea();
 		rectangulo1.calcularArea();
 		
+		circulo1.calcularPerimetro();
+		cuadrado1.calcularPerimetro();
+		triangulo1.calcularPerimetro();
+		
+		
 		System.out.printf("El area del circulo es %.3f\n",circulo1.getArea());
 		System.out.printf("El area del cuadrado es %.3f\n",cuadrado1.getArea());
 		System.out.printf("El area del triangulo es %.3f\n",triangulo1.getArea());
 		System.out.printf("El area del rectangulo es %.3f\n", rectangulo1.getArea());
+		
+		circulo1.imprimirArea();
+		cuadrado1.imprimirArea();
+		triangulo1.imprimirArea();
+		
+		circulo1.imprimirPerimetro();
+		cuadrado1.imprimirPerimetro();
+		triangulo1.imprimirPerimetro();
 		
 	}
 

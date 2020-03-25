@@ -26,8 +26,16 @@ public class Triangulo extends Figura {
 	}
 
 	@Override
-	protected void calcularArea() {
+	public void calcularArea() {
 		this.setArea((base*altura)/2);
+	}
+
+	@Override
+	public void calcularPerimetro() {
+		this.setPerimetro(base*3);
+	}
+	public void imprimirDatosFigura() {
+		
 	}
 
 }

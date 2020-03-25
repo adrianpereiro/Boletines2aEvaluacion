@@ -1,6 +1,6 @@
 package Boletin3_2;
 
-public class Cuadrado extends Figura{
+public final class Cuadrado extends Figura{  //Al poner final da error en los metodos que se sobreescribe en rectangulo
 	private double lado;
 
 	public Cuadrado(double lado) {
@@ -16,9 +16,18 @@ public class Cuadrado extends Figura{
 	}
 	
 	@Override
-	protected void calcularArea() {
+	public  void calcularArea() {
 		
 		this.setArea(lado*lado); 
+		
+	}
+
+	@Override
+	public void calcularPerimetro() {
+		this.setPerimetro(lado*4);
+	}
+	
+	public void imprimirDatosFigura() {
 		
 	}
 

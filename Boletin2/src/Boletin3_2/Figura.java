@@ -1,7 +1,8 @@
 package Boletin3_2;
 
-public abstract class Figura {
+public abstract class Figura implements ICalculosFigura,IImpresionFigura {
 	private double area;
+	private double perimetro;
 	
 	public double getArea() {
 		return area;
@@ -12,11 +13,23 @@ public abstract class Figura {
 		this.area = area;
 	}
 	
-	protected abstract void calcularArea();
+	public double getPerimetro() {
+		return perimetro;
+	}
+	
+	public void setPerimetro(double perimetro) {
+		this.perimetro=perimetro;
+	}
+	
+	public abstract void calcularArea();
 		
 	
-	protected void imprimirArea(double area) {
+	public void imprimirArea() {
 		System.out.printf("El area de esta figura es %s\n",area);
+	}
+	
+	public void imprimirPerimetro() {
+		System.out.printf("El perimetro de esta figura es %s\n",perimetro);
 	}
 }
 
