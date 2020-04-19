@@ -1,8 +1,6 @@
 package Recursividad;
 
 public class Ejercicio1 {
-	/*JODA DE SAIDA RIAMONOS TODOS JAJAAJAJAJAJAAJAJAJAJAAJAJAJ*/
-	
 	static int potencia(int x,int n) {
 		return x* potencia2(x,n-1);
 	}
